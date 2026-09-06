@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oblivion — Registre d'Alliance</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@400;600;700&display=swap');
+
+  :root {
+    --paper: #e8e2d0;
+    --paper-dark: #dcd4bc;
+    --ink: #2b2a24;
+    --olive: #4a5232;
+    --olive-dark: #363c24;
+    --rust: #9c3d2e;
+    --rust-dark: #7a2f22;
+    --gold: #a9884f;
+    --line: #b8ae8e;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--olive-dark);
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.02) 0, transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(255,255,255,0.02) 0, transparent 40%);
+    color: var(--ink);
+    font-family: 'Special Elite', monospace;
+    min-height: 100vh;
+    padding: 24px 16px 60px;
+  }
+
+  .sheet {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+    position: relative;
+  }
+
+  .sheet::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border: 1px solid var(--line);
+    pointer-events: none;
+  }
+
+  header {
+    padding: 36px 40px 20px;
+    border-bottom: 2px solid var(--ink);
+    text-align: center;
+  }
+
+  .eyebrow {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: var(--rust);
+  }
+
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    margin: 6px 0 4px;
+    color: var(--olive-dark);
+    letter-spacing: 0.01em;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: #5a5646;
+    margin: 0;
+  }
+
+  nav.tabs {
+    display: flex;
+    border-bottom: 1px solid var(--line);
+  }
+
+  nav.tabs button {
+    flex: 1;
+    background: none;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    padding: 14px 8px;
+    color: #7a755f;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+  }
+
+  nav.tabs button.active {
+    color: var(--olive-dark);
+    border-bottom-color: var(--rust);
+  }
+
+  .content { padding: 28px 40px 40px; }
+
+  .search-row {
+    display: flex;
+    gap: 0;
+    margin-bottom: 22px;
+    border: 2px solid var(--ink);
+  }
+
+  .search-row input {
+    flex: 1;
+    padding: 13px 14px;
+    font-family: 'Special Elite', monospace;
+    font-size: 15px;
+    background: #fdfbf3;
+    border: none;
+    color: var(--ink);
+    outline: none;
+  }
+
+  .search-row .count {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    background: var(--ink);
+    color: var(--paper);
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  .results { display: flex; flex-direction: column; gap: 14px; }
+
+  .card {
+    border: 1px solid var(--line);
+    background: #fdfbf3;
+    padding: 16px 18px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card.flagged { border-left: 5px solid var(--rust); }
+  .card.clear { border-left: 5px solid var(--olive); }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .card-name {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--olive-dark);
+  }
+
+  .stamp {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 3px 10px;
+    border: 2px solid var(--rust);
+    color: var(--rust);
+    transform: rotate(-3deg);
+    white-space: nowrap;
+  }
+
+  .stamp.ok {
+    border-color: var(--olive);
+    color: var(--olive);
+  }
+
+  .meta {
+    font-size: 12px;
+    color: #6b6650;
+    margin-top: 4px;
+  }
+
+  .reason {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ink);
+    border-top: 1px dashed var(--line);
+    padding-top: 10px;
+  }
+
+  .reason .label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--rust);
+    margin-right: 6px;
+  }
+
+  .empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: #7a755f;
+    font-size: 14px;
+  }
+
+  .empty strong {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: var(--olive-dark);
+    margin-bottom: 6px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 11px;
+    color: #6b6650;
+    padding: 18px 40px 30px;
+    border-top: 1px solid var(--line);
+  }
+
+  @media (max-width: 600px) {
+    header, .content { padding-left: 22px; padding-right: 22px; }
+    h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+  <header>
+    <div class="eyebrow">Alliance Oblivion — Supremacy 1914</div>
+    <h1>Registre &amp; Liste Noire</h1>
+    <p class="subtitle">Vérifiez un joueur avant de vous engager avec lui</p>
+  </header>
+
+  <nav class="tabs">
+    <button class="active" data-tab="blacklist">Liste noire</button>
+    <button data-tab="membres">Membres</button>
+  </nav>
+
+  <div class="content">
+    <div class="search-row">
+      <input id="search" type="text" placeholder="Rechercher un pseudo ou un ID...">
+      <div class="count" id="count">0 résultat</div>
+    </div>
+    <div class="results" id="results"></div>
+  </div>
+
+  <footer>Dernière mise à jour du registre : consultez le fichier source sur GitHub</footer>
+</div>
+
+<script>
+  let blacklist = [];
+  let membres = [];
+  let activeTab = 'blacklist';
+
+  async function loadData() {
+    try {
+      const [blRes, memRes] = await Promise.all([
+        fetch('blacklist.json').catch(() => null),
+        fetch('membres.json').catch(() => null)
+      ]);
+      blacklist = blRes && blRes.ok ? await blRes.json() : [];
+      membres = memRes && memRes.ok ? await memRes.json() : [];
+    } catch (e) {
+      blacklist = [];
+      membres = [];
+    }
+    render('');
+  }
+
+  function normalize(s) {
+    return (s || '').toString().toLowerCase();
+  }
+
+  function render(query) {
+    const q = normalize(query);
+    const resultsEl = document.getElementById('results');
+    const countEl = document.getElementById('count');
+    resultsEl.innerHTML = '';
+
+    if (activeTab === 'blacklist') {
+      const filtered = q
+        ? blacklist.filter(p => normalize(p.pseudo).includes(q) || normalize(p.id_jeu).includes(q))
+        : blacklist;
+
+      countEl.textContent = filtered.length + (filtered.length > 1 ? ' résultats' : ' résultat');
+
+      if (filtered.length === 0) {
+        resultsEl.innerHTML = `<div class="empty">
+          <strong>${q ? 'Aucun résultat' : 'La liste noire est vide'}</strong>
+          ${q ? "Ce pseudo ou cet ID n'apparaît dans aucun signalement." : 'Aucun joueur signalé pour le moment.'}
+        </div>`;
+        return;
+      }
+
+      filtered.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'card flagged';
+        card.innerHTML = `
+          <div class="card-top">
+            <div class="card-name">${escapeHtml(p.pseudo)}</div>
+            <div class="stamp">Blacklisté</div>
+          </div>
+          <div class="meta">ID: ${escapeHtml(p.id_jeu || 'Inconnu')} · Alliance: ${escapeHtml(p.alliance || 'Inconnue')} · Niveau: ${escapeHtml(p.niveau || '?')}</div>
+          <div class="reason"><span class="label">Raison</span>${escapeHtml(p.raison)}</div>
+          <div class="meta" style="margin-top:8px;">Signalé par ${escapeHtml(p.ajoute_par || '?')} le ${escapeHtml(p.date_ajout || '')}</div>
+        `;
+        resultsEl.appendChild(card);
+      });
+    } else {
+      const filtered = q
+        ? membres.filter(m => normalize(m.pseudo).includes(q) || normalize(m.id_jeu).includes(q))
+        : membres;
+
+      countEl.textContent = filtered.length + (filtered.length > 1 ? ' résultats' : ' résultat');
+
+      if (filtered.length === 0) {
+        resultsEl.innerHTML = `<div class="empty">
+          <strong>${q ? 'Aucun résultat' : 'Aucun membre enregistré'}</strong>
+          ${q ? "Ce pseudo ou cet ID ne correspond à aucun membre." : ''}
+        </div>`;
+        return;
+      }
+
+      filtered.forEach(m => {
+        const card = document.createElement('div');
+        card.className = 'card clear';
+        card.innerHTML = `
+          <div class="card-top">
+            <div class="card-name">${escapeHtml(m.pseudo)}</div>
+            <div class="stamp ok">Membre</div>
+          </div>
+          <div class="meta">ID: ${escapeHtml(m.id_jeu || 'Inconnu')} · Niveau: ${escapeHtml(m.niveau || '?')} (le ${escapeHtml(m.date_niveau || '?')})</div>
+          <div class="meta" style="margin-top:6px;">Victoires : ${escapeHtml(String(m.victoires ?? 0))}</div>
+        `;
+        resultsEl.appendChild(card);
+      });
+    }
+  }
+
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str == null ? '' : str;
+    return div.innerHTML;
+  }
+
+  document.querySelectorAll('nav.tabs button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('nav.tabs button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeTab = btn.dataset.tab;
+      document.getElementById('search').value = '';
+      render('');
+    });
+  });
+
+  document.getElementById('search').addEventListener('input', (e) => render(e.target.value));
+
+  loadData();
+</script>
+
+</body>
+</html>

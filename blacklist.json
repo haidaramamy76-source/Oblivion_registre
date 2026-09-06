@@ -1,0 +1,830 @@
+[
+  {
+    "pseudo": "toonnyyy",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Trahison, diplo noir, gold intensif",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "Flowy_",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold sans retenue",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "Aslooo",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Haute trahison",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "AdmiralVonSpee",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Haute trahison",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "Lacrapule02",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Provocation, ami dans le staff, a fait bannir un joueur d'une partie en 20 minutes. Ne pas lui parler.",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "GhostKiller",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold en debut de partie (vehicule blinde, forteresse)",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "Dek97",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold des forteresses",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "Le-Boss-Breton34",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Traitre",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "coup dure",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Traitre",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "The_Last_Empereur_94",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Traitre",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "General Lavoie",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Traitre",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "AELWENN PEROXYDE",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "A attaque un allie apres un differend sur le partage de territoire conquis ensemble.",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "LULU DU 34",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Rupture de PNA sans preavis",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "RObin003",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold abusif",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "Blutch99",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Joueur traitre",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "paRaNoiiD",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Paranoid, ne respecte pas les accords, ne tient aucune parole, et tres vulgaire",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "Magn974",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold sans retenue",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "ES Blofeld",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold + achat de la nouvelle unite",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "Patton 2B",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold + achat de la nouvelle unite",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "Tonypl2b",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold + achat de la nouvelle unite",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "TAZER90",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold, 4 cavaliers au jour 1",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "BENBEAVER",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Traitre et menteur",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "L horlogers",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold des forteresses",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "TondeuZze",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "400 soldats d'assaut au jour 24",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "juda1309",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold sans retenue",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "Clemswiss",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Achat de heros, tous ses heros sont niveau 20",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "3XPPP",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold + achat de troupes",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "THE BEST OF WORLD",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Multicompte",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "LEDRADOWL7",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Multicompte",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "BETERNUT",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Multicompte",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "ALB35",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Multicompte + trahison + gold, cas le plus grave rencontre",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "ESTE777",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Multicompte",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "DYNASTIE ALAOUITE",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Multicompte",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "FLARE..",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Multicompte",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "Elijah Baley",
+    "id_jeu": "83286270",
+    "alliance": "Aucune",
+    "niveau": "19",
+    "raison": "A admis avoir utilise 2000 euros pour acheter du gold pour une seule partie",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "Denise8323",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Insulte + provocation + ban Oblivion",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "Mathias1115",
+    "id_jeu": "28087197",
+    "alliance": "Aucune",
+    "niveau": "16",
+    "raison": "Trahison",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "Atamaiii",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Insulte et gold sans retenue",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "Antodu69",
+    "id_jeu": "100116572",
+    "alliance": "Aucune",
+    "niveau": "15",
+    "raison": "Double compte, gold",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "Antodu6943",
+    "id_jeu": "101053742",
+    "alliance": "Aucune",
+    "niveau": "9",
+    "raison": "Gold sans retenue",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "Victor Massilia",
+    "id_jeu": "29342704",
+    "alliance": "Great Royal Alliance",
+    "niveau": "19",
+    "raison": "Trahison + gold disproportionne, surveiller toute son alliance",
+    "ajoute_par": "madara_uchiwa__1_73326",
+    "date_ajout": "2026-07-19"
+  },
+  {
+    "pseudo": "Stellar Flares",
+    "id_jeu": "94890569",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "Lucas Halley",
+    "id_jeu": "76038453",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Trahison",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "Vikusek",
+    "id_jeu": "72225885",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "Teens revenge 22",
+    "id_jeu": "97926159",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Double compte",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "XxchuchoxX",
+    "id_jeu": "99783769",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Double compte",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "PALLEEEEE",
+    "id_jeu": "99900751",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Multicompte massif (18 comptes)",
+    "ajoute_par": "Inconnu",
+    "date_ajout": ""
+  },
+  {
+    "pseudo": "Willame21",
+    "id_jeu": "64472512",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-27"
+  },
+  {
+    "pseudo": "Homer Le Jaune",
+    "id_jeu": "3890442",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-27"
+  },
+  {
+    "pseudo": "Sharks1379.",
+    "id_jeu": "80758923",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-27"
+  },
+  {
+    "pseudo": "Vujko 01 UA",
+    "id_jeu": "21350700",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold et heros achetes",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-27"
+  },
+  {
+    "pseudo": "Raphitixxx",
+    "id_jeu": "61407441",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Comportement signale (jss plus)",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-28"
+  },
+  {
+    "pseudo": "Liberatrice",
+    "id_jeu": "7695285",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Double compte",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-28"
+  },
+  {
+    "pseudo": "Bao7",
+    "id_jeu": "52933457",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Double compte",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-28"
+  },
+  {
+    "pseudo": "Lieutenant Leo Major",
+    "id_jeu": "98210950",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-28"
+  },
+  {
+    "pseudo": "user167441872",
+    "id_jeu": "101626933",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-28"
+  },
+  {
+    "pseudo": "COSTASVDR",
+    "id_jeu": "56389080",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Heros achetes",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-29"
+  },
+  {
+    "pseudo": "POSEIDON 2708",
+    "id_jeu": "18016884",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold massif",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-29"
+  },
+  {
+    "pseudo": "Attila 31",
+    "id_jeu": "43231821",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-29"
+  },
+  {
+    "pseudo": "Poulin666",
+    "id_jeu": "37849916",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-31"
+  },
+  {
+    "pseudo": "Luxtro-DRD 61",
+    "id_jeu": "57935108",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold + heros achete",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-07-31"
+  },
+  {
+    "pseudo": "Potpot34",
+    "id_jeu": "43313448",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold + comportement insolent",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-03"
+  },
+  {
+    "pseudo": "Captain_Pressing",
+    "id_jeu": "85770226",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold + heros achetes",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-03"
+  },
+  {
+    "pseudo": "CDXGladios",
+    "id_jeu": "31484217",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Jeu de meute",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-03"
+  },
+  {
+    "pseudo": "Decafeiner",
+    "id_jeu": "675096",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Jeu de meute",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-03"
+  },
+  {
+    "pseudo": "Kee974",
+    "id_jeu": "98206096",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Jeu de meute",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-03"
+  },
+  {
+    "pseudo": "PoTaz",
+    "id_jeu": "85764258",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Jeu de meute",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-03"
+  },
+  {
+    "pseudo": "EvilChaussette",
+    "id_jeu": "17822268",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Jeu de meute + gold + heros achete + insultes",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-03"
+  },
+  {
+    "pseudo": "Tokus",
+    "id_jeu": "32043044",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Trahison",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-05"
+  },
+  {
+    "pseudo": "Derf kunen",
+    "id_jeu": "Inconnu",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Plusieurs heros achetes",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-08"
+  },
+  {
+    "pseudo": "piotr158",
+    "id_jeu": "6131568",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-10"
+  },
+  {
+    "pseudo": "Darkwineurfr",
+    "id_jeu": "44926294",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-11"
+  },
+  {
+    "pseudo": "Zeyrox_3",
+    "id_jeu": "69385856",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Utilise des cartes",
+    "ajoute_par": "zeubimix",
+    "date_ajout": "2026-08-13"
+  },
+  {
+    "pseudo": "Petunia974",
+    "id_jeu": "101054547",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Jeu de meute sur map solo",
+    "ajoute_par": "Arranoa",
+    "date_ajout": "2026-08-15"
+  },
+  {
+    "pseudo": "Gilloux47",
+    "id_jeu": "22334894",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Jeu de meute sur map solo",
+    "ajoute_par": "Arranoa",
+    "date_ajout": "2026-08-15"
+  },
+  {
+    "pseudo": "Ar Roue breizh",
+    "id_jeu": "99628604",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Attend que les allies de coalition soient loin pour attaquer dans le dos",
+    "ajoute_par": "Arranoa",
+    "date_ajout": "2026-08-15"
+  },
+  {
+    "pseudo": "Tierce1417",
+    "id_jeu": "100444859",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Traitre, comportement deloyal",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-16"
+  },
+  {
+    "pseudo": "Narayu",
+    "id_jeu": "98770951",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Multicompte massif",
+    "ajoute_par": "zeubimix",
+    "date_ajout": "2026-08-16"
+  },
+  {
+    "pseudo": "Eric-le-Conquerant",
+    "id_jeu": "25660212",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Diplo noir (coalition 15 contre 4) + gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-20"
+  },
+  {
+    "pseudo": "Benoit95800",
+    "id_jeu": "38298216",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Diplo noir (coalition 15 contre 4) + gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-20"
+  },
+  {
+    "pseudo": "Pacha-Sultan",
+    "id_jeu": "79589347",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Diplo noir (coalition 15 contre 4) + gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-20"
+  },
+  {
+    "pseudo": "Le dur en guerre",
+    "id_jeu": "100659903",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Diplo noir (coalition 15 contre 4) + gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-20"
+  },
+  {
+    "pseudo": "prestoneric",
+    "id_jeu": "23022868",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Diplo noir (coalition 15 contre 4) + gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-20"
+  },
+  {
+    "pseudo": "Hanazawa Rui",
+    "id_jeu": "3667944",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Diplo noir (coalition 15 contre 4) + gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-20"
+  },
+  {
+    "pseudo": "antho 02",
+    "id_jeu": "97775422",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Diplo noir (coalition 15 contre 4) + gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-20"
+  },
+  {
+    "pseudo": "Theolerigolo66e",
+    "id_jeu": "27424620",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Diplo noir (coalition 15 contre 4) + gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-20"
+  },
+  {
+    "pseudo": "Ewan PG",
+    "id_jeu": "100585046",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Diplo noir (coalition 15 contre 4) + gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-20"
+  },
+  {
+    "pseudo": "warifran7373",
+    "id_jeu": "warifran7373",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Diplo noir (coalition 15 contre 4) + gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-20"
+  },
+  {
+    "pseudo": "Sgt Thibs",
+    "id_jeu": "26033270",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Diplo noir (coalition 15 contre 4) + gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-20"
+  },
+  {
+    "pseudo": "Pompom_1er2",
+    "id_jeu": "88775903",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Diplo noir (coalition 15 contre 4) + gold",
+    "ajoute_par": "Kelium",
+    "date_ajout": "2026-08-20"
+  },
+  {
+    "pseudo": "TigreMG",
+    "id_jeu": "43938931",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Heros achete",
+    "ajoute_par": "zeubimix",
+    "date_ajout": "2026-08-22"
+  },
+  {
+    "pseudo": "El pacificateur",
+    "id_jeu": "85591857",
+    "alliance": "Inconnu",
+    "niveau": "Inconnu",
+    "raison": "Gold de masse (jours 4 a 15)",
+    "ajoute_par": "giogio",
+    "date_ajout": "2026-08-23"
+  }
+]
