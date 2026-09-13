@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oblivion — Signaler</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html">Accueil</a>
+  <a href="membres.html">Membres</a>
+  <a href="blacklist.html">Liste noire</a>
+  <a href="signaler.html" class="active">Signaler</a>
+</div>
+
+<div class="sheet">
+  <div class="content">
+    <div class="eyebrow">Alliance Oblivion</div>
+    <h1>Signaler un joueur</h1>
+    <p style="font-size:13px; color:#5a5646; margin-top:-8px; margin-bottom:24px;">
+      Un joueur triche, gold abusivement ou vous a trahi ? Remplissez ce formulaire,
+      il sera examiné avant d'être ajouté à la liste noire.
+    </p>
+
+    <!--
+      TODO Mamy 
+    -->
+    <form class="report" action="https://formspree.io/f/xjyvqvpk" method="POST">
+      <div>
+        <label for="pseudo_signaleur">Ton pseudo (celui qui signale)</label>
+        <input type="text" id="pseudo_signaleur" name="pseudo_signaleur" required>
+      </div>
+
+      <div>
+        <label for="pseudo_joueur">Pseudo du joueur signalé</label>
+        <input type="text" id="pseudo_joueur" name="pseudo_joueur" required>
+      </div>
+
+      <div>
+        <label for="id_joueur">ID du joueur (si connu)</label>
+        <input type="text" id="id_joueur" name="id_joueur">
+      </div>
+
+      <div>
+        <label for="raison">Raison du signalement</label>
+        <textarea id="raison" name="raison" required placeholder="Decrivez ce qui s'est passe..."></textarea>
+      </div>
+
+      <div>
+        <label for="commentaire">Autre commentaire ou plainte (optionnel)</label>
+        <textarea id="commentaire" name="commentaire" placeholder="Toute autre remarque pour l'alliance..."></textarea>
+      </div>
+
+      <p class="form-note">Ce message sera envoye directement aux responsables de l'alliance.</p>
+
+      <button type="submit" class="btn">Envoyer le signalement</button>
+    </form>
+  </div>
+  <footer>Alliance Oblivion — Supremacy 1914</footer>
+</div>
+
+</body>
+</html>

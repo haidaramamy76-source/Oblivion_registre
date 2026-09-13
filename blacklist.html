@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oblivion — Liste noire</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html">Accueil</a>
+  <a href="membres.html">Membres</a>
+  <a href="blacklist.html" class="active">Liste noire</a>
+  <a href="signaler.html">Signaler</a>
+</div>
+
+<div class="sheet">
+  <div class="content">
+    <div class="eyebrow">Alliance Oblivion</div>
+    <h1>Liste noire</h1>
+    <p style="font-size:13px; color:#5a5646; margin-top:-8px;">Vérifiez un joueur avant de vous engager avec lui</p>
+
+    <div class="search-row">
+      <input id="search" type="text" placeholder="Rechercher un pseudo ou un ID...">
+      <div class="count" id="count">0 résultat</div>
+    </div>
+
+    <div class="results" id="results"></div>
+  </div>
+  <footer>Alliance Oblivion — Supremacy 1914</footer>
+</div>
+
+<script>
+  let blacklist = [];
+
+  function normalize(s) { return (s || '').toString().toLowerCase(); }
+
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str == null ? '' : str;
+    return div.innerHTML;
+  }
+
+  function render(query) {
+    const q = normalize(query);
+    const resultsEl = document.getElementById('results');
+    const countEl = document.getElementById('count');
+    resultsEl.innerHTML = '';
+
+    const filtered = q
+      ? blacklist.filter(p => normalize(p.pseudo).includes(q) || normalize(p.id_jeu).includes(q))
+      : blacklist;
+
+    countEl.textContent = filtered.length + (filtered.length > 1 ? ' résultats' : ' résultat');
+
+    if (filtered.length === 0) {
+      resultsEl.innerHTML = `<div class="empty">
+        <strong>${q ? 'Aucun résultat' : 'La liste noire est vide'}</strong>
+        ${q ? "Ce pseudo ou cet ID n'apparaît dans aucun signalement." : 'Aucun joueur signalé pour le moment.'}
+      </div>`;
+      return;
+    }
+
+    filtered.forEach(p => {
+      const card = document.createElement('div');
+      card.className = 'card flagged';
+      card.innerHTML = `
+        <div class="card-top">
+          <div class="card-name">${escapeHtml(p.pseudo)}</div>
+          <div class="stamp">Blacklisté</div>
+        </div>
+        <div class="meta">ID: ${escapeHtml(p.id_jeu || 'Inconnu')} · Alliance: ${escapeHtml(p.alliance || 'Inconnue')} · Niveau: ${escapeHtml(p.niveau || '?')}</div>
+        <div class="reason"><span class="label">Raison</span>${escapeHtml(p.raison)}</div>
+        <div class="meta" style="margin-top:8px;">Signalé par ${escapeHtml(p.ajoute_par || '?')}${p.date_ajout ? ' le ' + escapeHtml(p.date_ajout) : ''}</div>
+      `;
+      resultsEl.appendChild(card);
+    });
+  }
+
+  async function loadData() {
+    try {
+      const res = await fetch('blacklist.json');
+      blacklist = res.ok ? await res.json() : [];
+    } catch (e) {
+      blacklist = [];
+    }
+    render('');
+  }
+
+  document.getElementById('search').addEventListener('input', (e) => render(e.target.value));
+  loadData();
+</script>
+
+</body>
+</html>

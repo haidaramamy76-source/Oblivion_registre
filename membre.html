@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oblivion — Membres</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html">Accueil</a>
+  <a href="membres.html" class="active">Membres</a>
+  <a href="blacklist.html">Liste noire</a>
+  <a href="signaler.html">Signaler</a>
+</div>
+
+<div class="sheet">
+  <div class="content">
+    <div class="eyebrow">Alliance Oblivion</div>
+    <h1>Registre des membres</h1>
+
+    <div class="search-row">
+      <input id="search" type="text" placeholder="Rechercher un pseudo ou un ID...">
+      <div class="count" id="count">0 résultat</div>
+    </div>
+
+    <div class="results" id="results"></div>
+  </div>
+  <footer>Alliance Oblivion — Supremacy 1914</footer>
+</div>
+
+<script>
+  let membres = [];
+
+  function normalize(s) { return (s || '').toString().toLowerCase(); }
+
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str == null ? '' : str;
+    return div.innerHTML;
+  }
+
+  function render(query) {
+    const q = normalize(query);
+    const resultsEl = document.getElementById('results');
+    const countEl = document.getElementById('count');
+    resultsEl.innerHTML = '';
+
+    const filtered = q
+      ? membres.filter(m => normalize(m.pseudo).includes(q) || normalize(m.id_jeu).includes(q))
+      : membres;
+
+    countEl.textContent = filtered.length + (filtered.length > 1 ? ' résultats' : ' résultat');
+
+    if (filtered.length === 0) {
+      resultsEl.innerHTML = `<div class="empty">
+        <strong>${q ? 'Aucun résultat' : 'Aucun membre enregistré'}</strong>
+        ${q ? "Ce pseudo ou cet ID ne correspond à aucun membre." : ''}
+      </div>`;
+      return;
+    }
+
+    filtered.forEach(m => {
+      const card = document.createElement('div');
+      card.className = 'card clear';
+      card.innerHTML = `
+        <div class="card-top">
+          <div class="card-name">${escapeHtml(m.pseudo)}</div>
+          <div class="stamp ok">Membre</div>
+        </div>
+        <div class="meta">ID: ${escapeHtml(m.id_jeu || 'Inconnu')} · Niveau: ${escapeHtml(m.niveau || '?')}${m.date_niveau ? ' (le ' + escapeHtml(m.date_niveau) + ')' : ''}</div>
+        <div class="meta" style="margin-top:6px;">Victoires : ${escapeHtml(String(m.victoires ?? 0))}</div>
+      `;
+      resultsEl.appendChild(card);
+    });
+  }
+
+  async function loadData() {
+    try {
+      const res = await fetch('membres.json');
+      membres = res.ok ? await res.json() : [];
+    } catch (e) {
+      membres = [];
+    }
+    render('');
+  }
+
+  document.getElementById('search').addEventListener('input', (e) => render(e.target.value));
+  loadData();
+</script>
+
+</body>
+</html>
